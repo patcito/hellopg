@@ -34,7 +34,7 @@ var app = {
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        window.open('http://apache.org', '_blank', 'location=yes');
+        window.open('http://apache.org', '_self', 'location=no');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
